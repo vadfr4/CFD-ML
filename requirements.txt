@@ -1,0 +1,16 @@
+# Core scientific stack (weeks 1-18)
+numpy
+scipy
+pandas
+matplotlib
+jupyterlab
+scikit-learn
+torch
+pyvista          # read/plot VTK output from OpenFOAM (foamToVTK)
+meshio
+tqdm
+
+# Weeks 19-24: uncomment when you get there
+# deepxde              # PINNs (weeks 19-20)
+# neuraloperator       # Fourier Neural Operator (week 21)
+# torch-geometric      # GNNs on unstructured meshes (week 22)

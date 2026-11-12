@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+*.egg-info/
+
+# OpenFOAM results (keep 0/, constant/, system/ case setups)
+[1-9]*/
+0.[0-9]*/
+processor*/
+postProcessing/
+VTK/
+*.foam
+log.*
+constant/polyMesh/
+!constant/polyMesh/blockMeshDict
+
+# Data and trained models
+data/
+*.npz
+*.npy
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+runs/
+wandb/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
