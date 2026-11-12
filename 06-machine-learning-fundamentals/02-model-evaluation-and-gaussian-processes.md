@@ -22,6 +22,12 @@
 
 GP surrogate for drag vs Re with confidence intervals; test outside the training range.
 
+## Resources
+
+- [Rasmussen & Williams — *Gaussian Processes for Machine Learning* (free online)](https://gaussianprocess.org/gpml/) — ch. 2: regression — The GP reference.
+- [scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html) — Gaussian Processes section
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

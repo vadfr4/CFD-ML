@@ -22,6 +22,12 @@
 
 1D heat-equation solver in NumPy; show it blowing up when the time step is too large.
 
+## Resources
+
+- [Lorena Barba — *CFD Python: 12 steps to Navier–Stokes* (notebooks + video lessons)](https://github.com/barbagroup/CFDPython) — steps 1–4 — Build a 2D Navier–Stokes solver step by step in Python.
+- Anderson — *Computational Fluid Dynamics: The Basics with Applications* (McGraw-Hill) — finite differences chapter — Gentlest introduction to CFD; great for equations and finite differences.
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

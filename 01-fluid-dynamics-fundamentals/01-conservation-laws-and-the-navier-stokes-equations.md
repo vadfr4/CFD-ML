@@ -22,6 +22,13 @@
 
 One-page cheat sheet of the equations with every term labelled.
 
+## Resources
+
+- Kundu, Cohen & Dowling — *Fluid Mechanics* (6th ed., Academic Press) — conservation laws chapter — The standard graduate fluid mechanics text.
+- Anderson — *Computational Fluid Dynamics: The Basics with Applications* (McGraw-Hill) — ch. 2: governing equations — Gentlest introduction to CFD; great for equations and finite differences.
+- [MIT / NCFMF — *Fluid Mechanics Films* (1960s classics, still the best visual intuition)](http://web.mit.edu/hml/ncfmf.html)
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

@@ -22,6 +22,11 @@
 
 Utility module that loads a sweep of cases into arrays.
 
+## Resources
+
+- [VanderPlas — *Python Data Science Handbook* (free online)](https://jakevdp.github.io/PythonDataScienceHandbook/) — ch. 2–3: NumPy and pandas — NumPy, pandas, Matplotlib, scikit-learn.
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

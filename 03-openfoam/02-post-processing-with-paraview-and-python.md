@@ -22,6 +22,12 @@
 
 Notebook loading cavity results and plotting the validation against Ghia et al.
 
+## Resources
+
+- [PyVista documentation](https://docs.pyvista.org/)
+- Ghia, Ghia & Shin (1982) — High-Re solutions for incompressible flow… (J. Comput. Phys. 48) — lid-driven cavity benchmark data
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

@@ -22,6 +22,12 @@
 
 Laminar flow past a cylinder (Re≈100) showing vortex shedding.
 
+## Resources
+
+- [OpenFOAM (openfoam.org) User Guide — CFD Direct](https://cfd.direct/openfoam/user-guide/) — Boundaries and solvers sections
+- [Greenshields & Weller — *Notes on CFD: General Principles* (free online)](https://doc.cfd.direct/notes/cfd-general-principles/) — Written by OpenFOAM's developers; explains the methods OpenFOAM uses.
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

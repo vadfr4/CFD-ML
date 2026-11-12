@@ -22,6 +22,10 @@
 
 README write-up of the project, suitable for a portfolio.
 
+## Resources
+
+- See the [subject resources](README.md#resources).
+
 ## Notes
 
 -

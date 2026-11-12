@@ -22,6 +22,12 @@
 
 DeepONet for a 1D PDE (e.g. diffusion with varying initial condition).
 
+## Resources
+
+- [Lu et al. (2021) — *DeepONet* (Nat. Mach. Intell.)](https://arxiv.org/abs/1910.03193)
+- [Steve Brunton — *Physics Informed Machine Learning* lecture series](https://www.youtube.com/results?search_query=Steve+Brunton+Physics+Informed+Machine+Learning) — DeepONet / architecture lecture — PINNs, DeepONet, FNO and GNN lectures.
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

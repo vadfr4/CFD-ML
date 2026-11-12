@@ -22,6 +22,13 @@
 
 Mesh-independence study (3 meshes) with a convergence plot.
 
+## Resources
+
+- [Fluid Mechanics 101 (Aidan Wimshurst) — YouTube CFD lectures](https://www.youtube.com/results?search_query=Fluid+Mechanics+101+Aidan+Wimshurst) — y+ and wall-function lectures — Excellent short lectures on FVM, SIMPLE, turbulence models, y+ and wall functions.
+- Pope — *Turbulent Flows* (Cambridge) — ch. 7: wall flows — The definitive turbulence textbook.
+- [NASA Turbulence Modeling Resource](https://turbmodels.larc.nasa.gov/) — verification cases — Exact model definitions and validation cases.
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

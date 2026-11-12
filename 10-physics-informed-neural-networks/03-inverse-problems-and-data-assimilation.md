@@ -22,6 +22,12 @@
 
 PINN that identifies an unknown parameter from noisy data.
 
+## Resources
+
+- [Karniadakis et al. (2021) — *Physics-informed machine learning* (Nat. Rev. Phys.)](https://www.nature.com/articles/s42254-021-00314-5)
+- [DeepXDE documentation](https://deepxde.readthedocs.io/) — inverse problem examples
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

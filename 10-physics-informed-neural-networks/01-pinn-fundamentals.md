@@ -22,6 +22,13 @@
 
 Burgers PINN compared to a numerical solution.
 
+## Resources
+
+- [Raissi, Perdikaris & Karniadakis (2019) — *Physics-informed neural networks* (J. Comput. Phys.); pre-print part I](https://arxiv.org/abs/1711.10561)
+- [Steve Brunton — *Physics Informed Machine Learning* lecture series](https://www.youtube.com/results?search_query=Steve+Brunton+Physics+Informed+Machine+Learning) — PINNs lecture — PINNs, DeepONet, FNO and GNN lectures.
+- [Thuerey et al. — *Physics-based Deep Learning* (free online)](https://physicsbaseddeeplearning.org/) — physical loss terms chapter — Surrogates, PINNs, differentiable physics — with notebooks.
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

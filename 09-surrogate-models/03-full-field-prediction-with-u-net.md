@@ -22,6 +22,12 @@
 
 Report notebook: predicted vs CFD fields and error maps.
 
+## Resources
+
+- [Thuerey et al. (2020) — *Deep Learning Methods for RANS Simulations of Airfoil Flows* (AIAA J.)](https://arxiv.org/abs/1810.08217) — error analysis section — Code: https://github.com/thunil/Deep-Flow-Prediction
+- [Thuerey et al. — *Physics-based Deep Learning* (free online)](https://physicsbaseddeeplearning.org/) — Surrogates, PINNs, differentiable physics — with notebooks.
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

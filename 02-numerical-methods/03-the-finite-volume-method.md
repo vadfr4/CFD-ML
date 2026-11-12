@@ -22,6 +22,13 @@
 
 1D finite-volume convection–diffusion solver, validated against the analytical solution.
 
+## Resources
+
+- Versteeg & Malalasekera — *An Introduction to Computational Fluid Dynamics: The Finite Volume Method* (2nd ed.) — ch. 4–5 — The classic FVM book: diffusion, convection schemes, SIMPLE, turbulence.
+- [Greenshields & Weller — *Notes on CFD: General Principles* (free online)](https://doc.cfd.direct/notes/cfd-general-principles/) — Written by OpenFOAM's developers; explains the methods OpenFOAM uses.
+- [Fluid Mechanics 101 (Aidan Wimshurst) — YouTube CFD lectures](https://www.youtube.com/results?search_query=Fluid+Mechanics+101+Aidan+Wimshurst) — Excellent short lectures on FVM, SIMPLE, turbulence models, y+ and wall functions.
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

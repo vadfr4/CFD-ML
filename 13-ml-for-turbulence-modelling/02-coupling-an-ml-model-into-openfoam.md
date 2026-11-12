@@ -22,6 +22,12 @@
 
 OpenFOAM run using an ML-corrected quantity (2 sessions likely).
 
+## Resources
+
+- [Kochkov et al. (2021) — *Machine learning–accelerated computational fluid dynamics* (PNAS)](https://arxiv.org/abs/2102.01010)
+- [Duraisamy, Iaccarino & Xiao (2019) — *Turbulence Modeling in the Age of Data* (Annu. Rev. Fluid Mech.)](https://arxiv.org/abs/1804.00183)
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

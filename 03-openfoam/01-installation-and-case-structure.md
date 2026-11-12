@@ -22,6 +22,12 @@
 
 Cavity case running; screenshot of the velocity field.
 
+## Resources
+
+- [OpenFOAM (openfoam.org) User Guide — CFD Direct](https://cfd.direct/openfoam/user-guide/) — Getting started: lid-driven cavity
+- [József Nagy — OpenFOAM tutorials (YouTube)](https://www.youtube.com/channel/UCjdgpuxuAxH9BqheyE82Vvw) — The largest set of OpenFOAM video tutorials: setup, meshing, ParaView.
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

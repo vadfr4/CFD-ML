@@ -22,6 +22,13 @@
 
 FNO trained on 2D Navier–Stokes; comparison with the U-Net.
 
+## Resources
+
+- [Li et al. (2021) — *Fourier Neural Operator for Parametric PDEs* (ICLR)](https://arxiv.org/abs/2010.08895)
+- [neuraloperator library documentation](https://neuraloperator.github.io/)
+- [Kovachki et al. (2023) — *Neural Operator: Learning Maps Between Function Spaces* (JMLR)](https://arxiv.org/abs/2108.08929)
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

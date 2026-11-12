@@ -22,6 +22,13 @@
 
 MLP that fits drag vs Re; compare with the GP from subject 06.
 
+## Resources
+
+- [Andrej Karpathy — *Neural Networks: Zero to Hero*](https://karpathy.ai/zero-to-hero.html) — micrograd lecture — Build backprop and neural nets from scratch.
+- [PyTorch tutorials](https://pytorch.org/tutorials/) — Learn the Basics
+- [3Blue1Brown — *Neural networks* series](https://www.3blue1brown.com/topics/neural-networks) — Visual intuition for gradient descent and backprop.
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

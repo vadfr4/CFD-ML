@@ -22,6 +22,13 @@
 
 GNN predicting a field directly on your cylinder/airfoil mesh.
 
+## Resources
+
+- [Hamilton — *Graph Representation Learning* (free pre-print)](https://www.cs.mcgill.ca/~wlh/grl_book/) — ch. 5: GNN model — Short, clear introduction to GNNs.
+- [PyTorch Geometric documentation](https://pytorch-geometric.readthedocs.io/)
+- [Stanford CS224W — *Machine Learning with Graphs* (lectures)](https://www.youtube.com/results?search_query=Stanford+CS224W+Machine+Learning+with+Graphs) — Course site: https://web.stanford.edu/class/cs224w/
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

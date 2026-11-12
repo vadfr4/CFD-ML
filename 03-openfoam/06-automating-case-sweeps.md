@@ -22,6 +22,12 @@
 
 Script that runs the cylinder case for 10+ Reynolds numbers and saves drag/lift to CSV.
 
+## Resources
+
+- [OpenFOAM (openfoam.org) User Guide — CFD Direct](https://cfd.direct/openfoam/user-guide/) — Running in parallel
+- [CFD Direct — OpenFOAM videos](https://cfd.direct/openfoam/videos)
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

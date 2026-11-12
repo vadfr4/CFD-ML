@@ -22,6 +22,12 @@
 
 One-page project plan in this folder.
 
+## Resources
+
+- [Vinuesa & Brunton (2022) — *Enhancing computational fluid dynamics with machine learning* (Nat. Comput. Sci.)](https://arxiv.org/abs/2110.02085)
+- [Brunton, Noack & Koumoutsakos (2020) — *Machine Learning for Fluid Mechanics* (Annu. Rev. Fluid Mech.)](https://arxiv.org/abs/1905.11075)
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

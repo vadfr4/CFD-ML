@@ -22,6 +22,13 @@
 
 POD of cylinder wake snapshots; plot the first 6 modes and energy spectrum.
 
+## Resources
+
+- [Brunton & Kutz — *Data-Driven Science and Engineering* (2nd ed., Cambridge)](https://databookuw.com/) — ch. 1: SVD; ch. 12: ROMs — The key book for ML + fluids: SVD/POD, DMD, ROMs, physics-informed ML. Site has videos and code for every section.
+- [Steve Brunton — *Singular Value Decomposition* / POD series](https://www.youtube.com/results?search_query=Steve+Brunton+singular+value+decomposition)
+- [Taira et al. (2017) — *Modal Analysis of Fluid Flows: An Overview* (AIAA J.)](https://arxiv.org/abs/1702.01453) — POD section
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

@@ -22,6 +22,12 @@
 
 Latent-space model that rolls out the cylinder wake; plot error vs time.
 
+## Resources
+
+- [Thuerey et al. — *Physics-based Deep Learning* (free online)](https://physicsbaseddeeplearning.org/) — unsteady / temporal sections — Surrogates, PINNs, differentiable physics — with notebooks.
+- [Brunton, Noack & Koumoutsakos (2020) — *Machine Learning for Fluid Mechanics* (Annu. Rev. Fluid Mech.)](https://arxiv.org/abs/1905.11075)
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

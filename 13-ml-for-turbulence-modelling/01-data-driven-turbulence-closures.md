@@ -22,6 +22,13 @@
 
 Notes + small TBNN trained on a public RANS/DNS dataset.
 
+## Resources
+
+- [Duraisamy, Iaccarino & Xiao (2019) — *Turbulence Modeling in the Age of Data* (Annu. Rev. Fluid Mech.)](https://arxiv.org/abs/1804.00183)
+- [Ling, Kurzawski & Templeton (2016) — *RANS turbulence modelling using deep neural networks with embedded invariance* (JFM) — TBNN](https://www.osti.gov/pages/servlets/purl/1333570)
+- [McConkey, Yee & Lien (2021) — *A curated dataset for data-driven turbulence modelling* (Sci. Data)](https://www.nature.com/articles/s41597-021-01034-2) — dataset to train on
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

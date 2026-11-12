@@ -22,6 +22,12 @@
 
 POD-NN model and comparison with the U-Net.
 
+## Resources
+
+- Hesthaven & Ubbiali (2018) — *Non-intrusive reduced order modeling of nonlinear problems using neural networks* (J. Comput. Phys.) — POD-NN
+- [Brunton & Kutz — *Data-Driven Science and Engineering* (2nd ed., Cambridge)](https://databookuw.com/) — ch. 13: interpolation for parametric ROMs — The key book for ML + fluids: SVD/POD, DMD, ROMs, physics-informed ML. Site has videos and code for every section.
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

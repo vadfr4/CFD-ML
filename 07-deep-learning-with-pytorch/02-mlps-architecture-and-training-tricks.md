@@ -22,6 +22,12 @@
 
 Small hyperparameter sweep with results in a table.
 
+## Resources
+
+- [Prince — *Understanding Deep Learning* (free online)](https://udlbook.github.io/udlbook/) — ch. 6–9: training, initialisation, regularisation — Clear, well-illustrated, with notebooks.
+- [Zhang, Lipton, Li & Smola — *Dive into Deep Learning* (free online)](https://d2l.ai/) — Hands-on with runnable PyTorch code.
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

@@ -22,6 +22,12 @@
 
 Notes deriving the RANS equations with the unclosed term highlighted.
 
+## Resources
+
+- Pope — *Turbulent Flows* (Cambridge) — ch. 4 (mean-flow equations) and ch. 6 (scales of turbulent motion) — The definitive turbulence textbook.
+- Davidson — *Turbulence: An Introduction for Scientists and Engineers* (Oxford) — Physical intuition for turbulence with less maths than Pope.
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

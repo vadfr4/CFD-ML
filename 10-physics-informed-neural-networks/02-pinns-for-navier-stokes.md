@@ -22,6 +22,12 @@
 
 PINN solution of a 2D flow validated against analytical or OpenFOAM data.
 
+## Resources
+
+- [DeepXDE documentation](https://deepxde.readthedocs.io/) — Navier–Stokes / Kovasznay example
+- [Wang, Teng & Perdikaris (2021) — *Understanding and mitigating gradient pathologies in PINNs*](https://arxiv.org/abs/2001.04536)
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

@@ -22,6 +22,10 @@
 
 Log each session below under Notes.
 
+## Resources
+
+- See the [subject resources](README.md#resources).
+
 ## Notes
 
 -

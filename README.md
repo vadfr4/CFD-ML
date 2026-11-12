@@ -9,7 +9,7 @@ A study plan to rebuild my computational fluid dynamics (CFD) skills and combine
 - Every lesson file has a session plan, a topic checklist, a hands-on build, and space for **Notes** and **Open questions**.
 - Put code for a lesson next to it (e.g. a notebook with the same number). Large OpenFOAM results and trained models are git-ignored.
 
-43 lessons in total (~86 hours).
+43 lessons in total (~86 hours). Each lesson links its best books, videos and papers; the full list is in [RESOURCES.md](RESOURCES.md).
 
 ## Setup
 

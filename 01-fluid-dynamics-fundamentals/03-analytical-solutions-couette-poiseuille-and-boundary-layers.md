@@ -22,6 +22,12 @@
 
 Notebook plotting the analytical profiles — keep it, it is your validation reference.
 
+## Resources
+
+- White — *Fluid Mechanics* (McGraw-Hill) — viscous flow / boundary layer chapters — Very readable undergraduate text with many worked examples.
+- Kundu, Cohen & Dowling — *Fluid Mechanics* (6th ed., Academic Press) — laminar flow and boundary layer chapters — The standard graduate fluid mechanics text.
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

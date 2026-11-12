@@ -22,6 +22,12 @@
 
 Python notebook: a table of example flows with their Re and expected regime.
 
+## Resources
+
+- White — *Fluid Mechanics* (McGraw-Hill) — dimensional analysis chapter — Very readable undergraduate text with many worked examples.
+- [MIT / NCFMF — *Fluid Mechanics Films* (1960s classics, still the best visual intuition)](http://web.mit.edu/hml/ncfmf.html) — Low Reynolds number flows; Turbulence films
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

@@ -22,6 +22,12 @@
 
 GNN rollout of an unsteady flow, compared with CFD.
 
+## Resources
+
+- [Pfaff et al. (2021) — *Learning Mesh-Based Simulation with Graph Networks* (MeshGraphNets, ICLR)](https://arxiv.org/abs/2010.03409)
+- [Sanchez-Gonzalez et al. (2020) — *Learning to Simulate Complex Physics with Graph Networks* (ICML)](https://arxiv.org/abs/2002.09405)
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

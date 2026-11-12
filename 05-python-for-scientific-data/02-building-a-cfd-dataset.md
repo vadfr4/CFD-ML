@@ -22,6 +22,12 @@
 
 Dataset from the cylinder sweep, saved with a README describing it.
 
+## Resources
+
+- [PyVista documentation](https://docs.pyvista.org/) — interpolation / sampling
+- [VanderPlas — *Python Data Science Handbook* (free online)](https://jakevdp.github.io/PythonDataScienceHandbook/) — NumPy, pandas, Matplotlib, scikit-learn.
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -

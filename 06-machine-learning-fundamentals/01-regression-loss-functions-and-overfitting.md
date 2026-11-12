@@ -22,6 +22,12 @@
 
 Predict cylinder drag coefficient from Re with polynomial regression.
 
+## Resources
+
+- [James, Witten, Hastie, Tibshirani & Taylor — *An Introduction to Statistical Learning (with Python)* (free online)](https://www.statlearning.com/) — ch. 3, 5, 6: regression, resampling, regularisation — Best introduction to classic ML concepts.
+- [StatQuest (Josh Starmer) — ML concepts explained](https://www.youtube.com/results?search_query=StatQuest+machine+learning)
+- More: [subject resources](README.md#resources)
+
 ## Notes
 
 -
