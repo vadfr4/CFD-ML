@@ -1,0 +1,16 @@
+# Core scientific stack (subjects 01-09)
+numpy
+scipy
+pandas
+matplotlib
+jupyterlab
+scikit-learn
+torch
+pyvista          # read/plot VTK output from OpenFOAM (foamToVTK)
+meshio
+tqdm
+
+# Later subjects: uncomment when you get there
+# deepxde              # PINNs (subject 10)
+# neuraloperator       # Fourier Neural Operator (subject 11)
+# torch-geometric      # GNNs on unstructured meshes (subject 12)
