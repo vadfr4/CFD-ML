@@ -7,8 +7,11 @@ venv/
 *.egg-info/
 
 # OpenFOAM results (keep 0/, constant/, system/ case setups)
-[1-9]*/
-0.[0-9]*/
+# OpenFOAM time directories (only match purely numeric names like 1/, 2.5/, 1e-05/)
+**/[1-9]/
+**/[0-9][0-9.e-]*[0-9]/
+**/0.[0-9]*/
+!/[0-9][0-9]-*/
 processor*/
 postProcessing/
 VTK/

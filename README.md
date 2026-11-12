@@ -1,12 +1,15 @@
 # CFD-ML
 
-A 24-week plan to rebuild my computational fluid dynamics (CFD) skills and combine them with machine learning: from OpenFOAM basics through data-driven surrogates to physics-informed ML and neural operators.
+A study plan to rebuild my computational fluid dynamics (CFD) skills and combine them with machine learning: from the physics and OpenFOAM through data-driven surrogates to physics-informed ML and neural operators.
 
 ## How this repo is organised
 
-- One folder per week, grouped by phase (`phase-N-.../week-NN/`).
-- Each week's `README.md` has three sections: **Notes**, **Saturday build** (the hands-on project for that week) and **Open questions**.
-- Large OpenFOAM results and trained models are git-ignored; keep only case setups, scripts and small figures in git.
+- The plan is split into **subjects** (numbered folders, in a sensible order).
+- Each subject has **lessons**, each sized for **one ~2-hour study session** (≈30 min theory, ≈75 min hands-on, ≈15 min notes). Bigger topics are split into parts.
+- Every lesson file has a session plan, a topic checklist, a hands-on build, and space for **Notes** and **Open questions**.
+- Put code for a lesson next to it (e.g. a notebook with the same number). Large OpenFOAM results and trained models are git-ignored.
+
+43 lessons in total (~86 hours).
 
 ## Setup
 
@@ -20,38 +23,87 @@ OpenFOAM is installed separately (see https://openfoam.org or https://www.openfo
 
 ## Progress
 
-### Phase 1 — CFD foundations
+### [Fluid dynamics fundamentals](01-fluid-dynamics-fundamentals/)
 
-- [ ] [Week 01](phase-1-cfd-foundations/week-01/) — Governing equations: Navier–Stokes, continuity, non-dimensional numbers
-- [ ] [Week 02](phase-1-cfd-foundations/week-02/) — Finite volume method basics and discretisation schemes
-- [ ] [Week 03](phase-1-cfd-foundations/week-03/) — OpenFOAM setup and the lid-driven cavity tutorial
-- [ ] [Week 04](phase-1-cfd-foundations/week-04/) — Meshing with blockMesh and snappyHexMesh
-- [ ] [Week 05](phase-1-cfd-foundations/week-05/) — Boundary conditions, solvers (icoFoam, simpleFoam, pimpleFoam)
-- [ ] [Week 06](phase-1-cfd-foundations/week-06/) — Turbulence modelling (RANS k-ε, k-ω SST) and post-processing in ParaView
+- [ ] [Conservation laws and the Navier–Stokes equations](01-fluid-dynamics-fundamentals/01-conservation-laws-and-the-navier-stokes-equations.md)
+- [ ] [Non-dimensional numbers and flow regimes](01-fluid-dynamics-fundamentals/02-non-dimensional-numbers-and-flow-regimes.md)
+- [ ] [Analytical solutions: Couette, Poiseuille and boundary layers](01-fluid-dynamics-fundamentals/03-analytical-solutions-couette-poiseuille-and-boundary-layers.md)
 
-### Phase 2 — ML foundations for scientific data
+### [Numerical methods for CFD](02-numerical-methods/)
 
-- [ ] [Week 07](phase-2-ml-foundations/week-07/) — NumPy / pandas refresher and reading OpenFOAM fields into Python
-- [ ] [Week 08](phase-2-ml-foundations/week-08/) — Regression and model evaluation with scikit-learn
-- [ ] [Week 09](phase-2-ml-foundations/week-09/) — Neural networks in PyTorch: MLPs, training loops, optimisers
-- [ ] [Week 10](phase-2-ml-foundations/week-10/) — CNNs for gridded field data
-- [ ] [Week 11](phase-2-ml-foundations/week-11/) — Dimensionality reduction: PCA / POD on flow snapshots
-- [ ] [Week 12](phase-2-ml-foundations/week-12/) — Building a parametric CFD dataset (automated case sweeps)
+- [ ] [Finite differences and the 1D diffusion equation](02-numerical-methods/01-finite-differences-and-the-1d-diffusion-equation.md)
+- [ ] [Convection: upwind, central schemes and the CFL condition](02-numerical-methods/02-convection-upwind-central-schemes-and-the-cfl-condition.md)
+- [ ] [The finite volume method](02-numerical-methods/03-the-finite-volume-method.md)
+- [ ] [Pressure–velocity coupling (SIMPLE / PISO)](02-numerical-methods/04-pressure-velocity-coupling.md)
 
-### Phase 3 — Data-driven surrogate models
+### [OpenFOAM in practice](03-openfoam/)
 
-- [ ] [Week 13](phase-3-surrogate-models/week-13/) — MLP surrogate for scalar outputs (drag, lift, pressure drop)
-- [ ] [Week 14](phase-3-surrogate-models/week-14/) — U-Net surrogate for full-field prediction
-- [ ] [Week 15](phase-3-surrogate-models/week-15/) — POD + neural network reduced-order model
-- [ ] [Week 16](phase-3-surrogate-models/week-16/) — Autoencoders and latent-space models
-- [ ] [Week 17](phase-3-surrogate-models/week-17/) — Time-series surrogates for unsteady flow (LSTM / sequence models)
-- [ ] [Week 18](phase-3-surrogate-models/week-18/) — Uncertainty, generalisation and error analysis vs. CFD
+- [ ] [Installation and case structure](03-openfoam/01-installation-and-case-structure.md)
+- [ ] [Post-processing with ParaView and Python](03-openfoam/02-post-processing-with-paraview-and-python.md)
+- [ ] [Meshing with blockMesh](03-openfoam/03-meshing-with-blockmesh.md)
+- [ ] [Meshing with snappyHexMesh](03-openfoam/04-meshing-with-snappyhexmesh.md)
+- [ ] [Boundary conditions and solver choice](03-openfoam/05-boundary-conditions-and-solver-choice.md)
+- [ ] [Automating case sweeps](03-openfoam/06-automating-case-sweeps.md)
 
-### Phase 4 — Physics-informed and operator learning
+### [Turbulence modelling](04-turbulence-modelling/)
 
-- [ ] [Week 19](phase-4-physics-informed-ml/week-19/) — Physics-informed neural networks (PINNs) fundamentals
-- [ ] [Week 20](phase-4-physics-informed-ml/week-20/) — PINNs for Navier–Stokes problems
-- [ ] [Week 21](phase-4-physics-informed-ml/week-21/) — Neural operators: Fourier Neural Operator (FNO)
-- [ ] [Week 22](phase-4-physics-informed-ml/week-22/) — Graph neural networks on unstructured CFD meshes
-- [ ] [Week 23](phase-4-physics-informed-ml/week-23/) — ML-augmented turbulence closures
-- [ ] [Week 24](phase-4-physics-informed-ml/week-24/) — Capstone project and write-up
+- [ ] [Turbulence basics and Reynolds averaging](04-turbulence-modelling/01-turbulence-basics-and-reynolds-averaging.md)
+- [ ] [RANS models: k-ε and k-ω SST](04-turbulence-modelling/02-rans-models-k-ε-and-k-ω-sst.md)
+- [ ] [Wall treatment, y+ and validation](04-turbulence-modelling/03-wall-treatment-y-and-validation.md)
+
+### [Python for scientific data](05-python-for-scientific-data/)
+
+- [ ] [NumPy and pandas refresher for field data](05-python-for-scientific-data/01-numpy-and-pandas-refresher-for-field-data.md)
+- [ ] [Building a CFD dataset](05-python-for-scientific-data/02-building-a-cfd-dataset.md)
+
+### [Machine learning fundamentals](06-machine-learning-fundamentals/)
+
+- [ ] [Regression, loss functions and overfitting](06-machine-learning-fundamentals/01-regression-loss-functions-and-overfitting.md)
+- [ ] [Model evaluation and Gaussian processes](06-machine-learning-fundamentals/02-model-evaluation-and-gaussian-processes.md)
+
+### [Deep learning with PyTorch](07-deep-learning-with-pytorch/)
+
+- [ ] [Tensors, autograd and the training loop](07-deep-learning-with-pytorch/01-tensors-autograd-and-the-training-loop.md)
+- [ ] [MLPs: architecture and training tricks](07-deep-learning-with-pytorch/02-mlps-architecture-and-training-tricks.md)
+- [ ] [CNNs for gridded field data](07-deep-learning-with-pytorch/03-cnns-for-gridded-field-data.md)
+
+### [Reduced-order modelling](08-reduced-order-modelling/)
+
+- [ ] [POD / PCA on flow snapshots](08-reduced-order-modelling/01-pod-pca-on-flow-snapshots.md)
+- [ ] [Dynamic mode decomposition (DMD)](08-reduced-order-modelling/02-dynamic-mode-decomposition.md)
+- [ ] [Autoencoders as nonlinear POD](08-reduced-order-modelling/03-autoencoders-as-nonlinear-pod.md)
+
+### [Data-driven surrogate models](09-surrogate-models/)
+
+- [ ] [Scalar-output surrogates](09-surrogate-models/01-scalar-output-surrogates.md)
+- [ ] [Full-field prediction with U-Net (part 1: model)](09-surrogate-models/02-full-field-prediction-with-u-net.md)
+- [ ] [Full-field prediction with U-Net (part 2: evaluation)](09-surrogate-models/03-full-field-prediction-with-u-net.md)
+- [ ] [POD + neural network reduced-order model](09-surrogate-models/04-pod-neural-network-reduced-order-model.md)
+- [ ] [Time-series surrogates for unsteady flow](09-surrogate-models/05-time-series-surrogates-for-unsteady-flow.md)
+
+### [Physics-informed neural networks (PINNs)](10-physics-informed-neural-networks/)
+
+- [ ] [PINN fundamentals](10-physics-informed-neural-networks/01-pinn-fundamentals.md)
+- [ ] [PINNs for Navier–Stokes](10-physics-informed-neural-networks/02-pinns-for-navier-stokes.md)
+- [ ] [Inverse problems and data assimilation](10-physics-informed-neural-networks/03-inverse-problems-and-data-assimilation.md)
+
+### [Neural operators](11-neural-operators/)
+
+- [ ] [Operator learning and DeepONet](11-neural-operators/01-operator-learning-and-deeponet.md)
+- [ ] [Fourier Neural Operator (FNO)](11-neural-operators/02-fourier-neural-operator.md)
+
+### [Graph neural networks on meshes](12-graph-neural-networks/)
+
+- [ ] [Graphs from meshes and message passing](12-graph-neural-networks/01-graphs-from-meshes-and-message-passing.md)
+- [ ] [MeshGraphNets-style models for unsteady flow](12-graph-neural-networks/02-meshgraphnets-style-models-for-unsteady-flow.md)
+
+### [ML for turbulence modelling](13-ml-for-turbulence-modelling/)
+
+- [ ] [Data-driven turbulence closures](13-ml-for-turbulence-modelling/01-data-driven-turbulence-closures.md)
+- [ ] [Coupling an ML model into OpenFOAM](13-ml-for-turbulence-modelling/02-coupling-an-ml-model-into-openfoam.md)
+
+### [Capstone project](14-capstone/)
+
+- [ ] [Project scoping](14-capstone/01-project-scoping.md)
+- [ ] [Build sessions (repeat as needed)](14-capstone/02-build-sessions.md)
+- [ ] [Write-up](14-capstone/03-write-up.md)

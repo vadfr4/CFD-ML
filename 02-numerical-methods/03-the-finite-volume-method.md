@@ -1,0 +1,31 @@
+# The finite volume method
+
+**Subject:** Numerical methods for CFD · **Time:** ~2 h session
+
+**Goal:** Understand cells, faces, fluxes and why FVM is conservative (this is what OpenFOAM does).
+
+## Session plan
+
+| Block | Time | What |
+|---|---|---|
+| Theory | ~30 min | Integral form → face fluxes |
+| Hands-on | ~75 min | Interpolation of face values, gradient reconstruction; Boundary conditions as face fluxes |
+| Wrap-up | ~15 min | Write notes and open questions below; commit |
+
+## Topics
+
+- [ ] Integral form → face fluxes
+- [ ] Interpolation of face values, gradient reconstruction
+- [ ] Boundary conditions as face fluxes
+
+## Build
+
+1D finite-volume convection–diffusion solver, validated against the analytical solution.
+
+## Notes
+
+-
+
+## Open questions
+
+-
