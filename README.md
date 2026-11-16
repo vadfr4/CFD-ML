@@ -1,5 +1,7 @@
 # CFD-ML
 
+**Website:** https://vadfr4.github.io/CFD-ML/ (built from these files by `site/build.py` on every push to `main`)
+
 A study plan to rebuild my computational fluid dynamics (CFD) skills and combine them with machine learning: from the physics and OpenFOAM through data-driven surrogates to physics-informed ML and neural operators.
 
 ## How this repo is organised
