@@ -3,7 +3,7 @@
 Usage:  python site/build.py            -> writes the site to _site/
         python site/build.py --out DIR  -> writes it somewhere else
 
-Needs the `markdown` package (pip install markdown).
+Needs the `markdown` and `pymdown-extensions` packages (pip install markdown pymdown-extensions).
 """
 import argparse
 import html
@@ -24,8 +24,20 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
 esc = html.escape
 
 
+KATEX = "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/"
+MATH = (f'<link rel="stylesheet" href="{KATEX}katex.min.css">'
+        f'<script defer src="{KATEX}katex.min.js"></script>'
+        f'<script defer src="{KATEX}contrib/auto-render.min.js" onload="renderMathInElement(document.body,'
+        '{delimiters:[{left:\'\\\\[\',right:\'\\\\]\',display:true},{left:\'\\\\(\',right:\'\\\\)\',display:false}],'
+        'ignoredClasses:[\'no-math\']})"></script>')
+
+
 def md(text):
-    return markdown.markdown(text.strip(), extensions=["tables"])
+    return markdown.markdown(
+        text.strip(),
+        extensions=["tables", "fenced_code", "md_in_html", "pymdownx.arithmatex"],
+        extension_configs={"pymdownx.arithmatex": {"generic": True}},
+    )
 
 
 def page(title, body, depth=0, reading=False):
@@ -39,6 +51,7 @@ def page(title, body, depth=0, reading=False):
 <title>{esc(title)}</title>
 {FONTS}
 <link rel="stylesheet" href="{up}style.css">
+{MATH if reading else ""}
 </head>
 <body>
 <div class="{cls}">
@@ -157,12 +170,38 @@ def build_lessons(subjects, out):
         resources = p.get("Resources", "").replace(
             "(README.md#resources)", f"({GITHUB}/tree/main/{s['folder']}#resources)")
         edit = f"{GITHUB}/edit/main/{l['src']}"
+        build_md = p.get("Build", "")
+        nb = l["file"].with_suffix(".ipynb")
+        if nb.exists():
+            build_md = build_md.split("\n\n- Exercise notebook")[0]
+            folder = s["folder"]
+            build_md += (f"\n\nOpen [the exercise notebook]({GITHUB}/blob/main/{folder}/{nb.name}) in Jupyter and fill in the gaps. "
+                         f"Then compare with [the solution]({GITHUB}/blob/main/{folder}/solutions/{nb.name}).")
 
         def notes(name):
             body = p.get(name, "")
             if is_empty(body):
                 return f'<p class="empty">Nothing yet. <a href="{edit}">Write it on GitHub</a>.</p>'
             return md(body)
+
+        h2 = lambda t: f'<h2 style="font-family: var(--sans)">{esc(t)}</h2>'
+        rendered = []
+        for name, body_md in p.items():
+            if name == "Session plan":
+                continue
+            if name == "Topics":
+                rendered.append(f'<section class="section">{h2("What to cover")}<div class="topics" data-key="{l["src"]}">{topics}</div></section>')
+            elif name == "Build":
+                rendered.append(f'<section class="section well">{h2("Build")}{md(build_md)}</section>')
+            elif name == "Resources":
+                rendered.append(f'<section class="section">{h2("Read and watch")}{md(resources)}</section>')
+            elif name in ("Notes", "Open questions"):
+                rendered.append(f'<section class="section">{h2(name)}{notes(name)}</section>')
+            else:
+                rendered.append(f'<section class="section">{h2(name)}{md(body_md)}</section>')
+        sections_html = "\n".join(rendered)
+        plan = ("Two hours: 30 minutes reading the theory, 75 on the example and the build, 15 for the check questions and notes."
+                if "Theory" in p else "Two hours: 30 minutes of theory, 75 building, 15 for notes.")
 
         prev_link = next_link = ""
         if i > 0:
@@ -178,13 +217,9 @@ def build_lessons(subjects, out):
 <p class="muted" style="font-family: var(--sans); font-size: 15px">Lesson {n_in} of {len(s['lessons'])} in {esc(s['name'])}</p>
 <h1 style="font-family: var(--sans)">{esc(l['title'])}</h1>
 <p class="lead">{esc(l['goal'])}</p>
-<p class="muted" style="font-family: var(--sans); font-size: 15px">Two hours: 30 minutes of theory, 75 building, 15 for notes.</p>
+<p class="muted" style="font-family: var(--sans); font-size: 15px">{plan}</p>
 </div>
-<section class="section"><h2 style="font-family: var(--sans)">What to cover</h2><div class="topics" data-key="{l['src']}">{topics}</div></section>
-<section class="section well"><h2 style="font-family: var(--sans)">Build</h2>{md(p.get('Build', ''))}</section>
-<section class="section"><h2 style="font-family: var(--sans)">Read and watch</h2>{md(resources)}</section>
-<section class="section"><h2 style="font-family: var(--sans)">Notes</h2>{notes('Notes')}</section>
-<section class="section"><h2 style="font-family: var(--sans)">Open questions</h2>{notes('Open questions')}</section>
+{sections_html}
 <p class="muted" style="font-family: var(--sans); font-size: 15px">Ticks are saved in this browser only. <a href="{edit}">Edit this lesson on GitHub</a> to keep notes for good.</p>
 <nav class="pager" aria-label="Lessons" style="font-family: var(--sans)">{prev_link}{next_link}</nav>
 </article>

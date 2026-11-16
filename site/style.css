@@ -125,6 +125,17 @@ p { margin: 0; }
 .pager span { font-size: 14px; color: var(--ink-3); }
 .pager .next { text-align: right; margin-left: auto; }
 
+/* Long-form lesson content */
+.prose h3 { font-family: var(--sans); font-size: 18px; margin-top: 16px; }
+.prose pre { margin: 0; overflow-x: auto; background: var(--well); border-radius: 8px; padding: 14px 16px; font-size: 14px; line-height: 1.5; }
+.prose pre code { background: none; padding: 0; font-size: inherit; }
+.prose .arithmatex { overflow-x: auto; overflow-y: hidden; }
+.prose div.arithmatex { padding: 4px 0; }
+.prose details { margin-top: 8px; border-left: 2px solid var(--rule); padding-left: 14px; }
+.prose summary { cursor: pointer; font-family: var(--sans); font-size: 15px; color: var(--accent); min-height: 32px; }
+.prose ol > li + li { margin-top: 12px; }
+.section > * + * { margin-top: 0; }
+
 /* Resources page */
 .doc { font-family: var(--serif); font-size: 18px; line-height: 1.65; display: flex; flex-direction: column; gap: 16px; }
 .doc h2 { font-family: var(--sans); margin-top: 40px; }

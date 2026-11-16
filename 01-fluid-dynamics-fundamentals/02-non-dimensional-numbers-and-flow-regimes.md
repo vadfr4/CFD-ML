@@ -22,6 +22,9 @@
 
 Python notebook: a table of example flows with their Re and expected regime.
 
+- Exercise notebook: [02-non-dimensional-numbers-and-flow-regimes.ipynb](02-non-dimensional-numbers-and-flow-regimes.ipynb)
+- Solution to compare against: [solutions/02-non-dimensional-numbers-and-flow-regimes.ipynb](solutions/02-non-dimensional-numbers-and-flow-regimes.ipynb)
+
 ## Resources
 
 - White — *Fluid Mechanics* (McGraw-Hill) — dimensional analysis chapter — Very readable undergraduate text with many worked examples.
