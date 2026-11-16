@@ -22,6 +22,9 @@
 
 1D heat-equation solver in NumPy; show it blowing up when the time step is too large.
 
+- Exercise notebook: [01-finite-differences-and-the-1d-diffusion-equation.ipynb](01-finite-differences-and-the-1d-diffusion-equation.ipynb)
+- Solution to compare against: [solutions/01-finite-differences-and-the-1d-diffusion-equation.ipynb](solutions/01-finite-differences-and-the-1d-diffusion-equation.ipynb)
+
 ## Resources
 
 - [Lorena Barba — *CFD Python: 12 steps to Navier–Stokes* (notebooks + video lessons)](https://github.com/barbagroup/CFDPython) — steps 1–4 — Build a 2D Navier–Stokes solver step by step in Python.

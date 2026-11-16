@@ -22,6 +22,9 @@
 
 Notebook plotting the analytical profiles — keep it, it is your validation reference.
 
+- Exercise notebook: [03-analytical-solutions-couette-poiseuille-and-boundary-layers.ipynb](03-analytical-solutions-couette-poiseuille-and-boundary-layers.ipynb)
+- Solution to compare against: [solutions/03-analytical-solutions-couette-poiseuille-and-boundary-layers.ipynb](solutions/03-analytical-solutions-couette-poiseuille-and-boundary-layers.ipynb)
+
 ## Resources
 
 - White — *Fluid Mechanics* (McGraw-Hill) — viscous flow / boundary layer chapters — Very readable undergraduate text with many worked examples.

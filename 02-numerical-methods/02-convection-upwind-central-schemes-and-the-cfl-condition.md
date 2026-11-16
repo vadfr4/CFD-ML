@@ -22,6 +22,9 @@
 
 Animated plot comparing upwind vs central on advection of a square wave.
 
+- Exercise notebook: [02-convection-upwind-central-schemes-and-the-cfl-condition.ipynb](02-convection-upwind-central-schemes-and-the-cfl-condition.ipynb)
+- Solution to compare against: [solutions/02-convection-upwind-central-schemes-and-the-cfl-condition.ipynb](solutions/02-convection-upwind-central-schemes-and-the-cfl-condition.ipynb)
+
 ## Resources
 
 - [Lorena Barba — *CFD Python: 12 steps to Navier–Stokes* (notebooks + video lessons)](https://github.com/barbagroup/CFDPython) — steps 1–4 (convection) — Build a 2D Navier–Stokes solver step by step in Python.

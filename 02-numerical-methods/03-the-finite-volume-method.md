@@ -22,6 +22,9 @@
 
 1D finite-volume convection–diffusion solver, validated against the analytical solution.
 
+- Exercise notebook: [03-the-finite-volume-method.ipynb](03-the-finite-volume-method.ipynb)
+- Solution to compare against: [solutions/03-the-finite-volume-method.ipynb](solutions/03-the-finite-volume-method.ipynb)
+
 ## Resources
 
 - Versteeg & Malalasekera — *An Introduction to Computational Fluid Dynamics: The Finite Volume Method* (2nd ed.) — ch. 4–5 — The classic FVM book: diffusion, convection schemes, SIMPLE, turbulence.

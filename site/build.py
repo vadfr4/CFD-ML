@@ -157,6 +157,13 @@ def build_lessons(subjects, out):
         resources = p.get("Resources", "").replace(
             "(README.md#resources)", f"({GITHUB}/tree/main/{s['folder']}#resources)")
         edit = f"{GITHUB}/edit/main/{l['src']}"
+        build_md = p.get("Build", "")
+        nb = l["file"].with_suffix(".ipynb")
+        if nb.exists():
+            build_md = build_md.split("\n\n- Exercise notebook")[0]
+            folder = s["folder"]
+            build_md += (f"\n\nOpen [the exercise notebook]({GITHUB}/blob/main/{folder}/{nb.name}) in Jupyter and fill in the gaps. "
+                         f"Then compare with [the solution]({GITHUB}/blob/main/{folder}/solutions/{nb.name}).")
 
         def notes(name):
             body = p.get(name, "")
@@ -181,7 +188,7 @@ def build_lessons(subjects, out):
 <p class="muted" style="font-family: var(--sans); font-size: 15px">Two hours: 30 minutes of theory, 75 building, 15 for notes.</p>
 </div>
 <section class="section"><h2 style="font-family: var(--sans)">What to cover</h2><div class="topics" data-key="{l['src']}">{topics}</div></section>
-<section class="section well"><h2 style="font-family: var(--sans)">Build</h2>{md(p.get('Build', ''))}</section>
+<section class="section well"><h2 style="font-family: var(--sans)">Build</h2>{md(build_md)}</section>
 <section class="section"><h2 style="font-family: var(--sans)">Read and watch</h2>{md(resources)}</section>
 <section class="section"><h2 style="font-family: var(--sans)">Notes</h2>{notes('Notes')}</section>
 <section class="section"><h2 style="font-family: var(--sans)">Open questions</h2>{notes('Open questions')}</section>

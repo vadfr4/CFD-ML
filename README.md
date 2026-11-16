@@ -13,6 +13,14 @@ A study plan to rebuild my computational fluid dynamics (CFD) skills and combine
 
 43 lessons in total (~86 hours). Each lesson links its best books, videos and papers; the full list is in [RESOURCES.md](RESOURCES.md).
 
+## Getting started
+
+1. Get the files: `git clone https://github.com/vadfr4/CFD-ML.git` and `cd CFD-ML`.
+2. Install the Python packages (below), then run the setup check: `python tools/check_setup.py`.
+   On Windows, run it both in PowerShell and inside WSL: it reports where OpenFOAM is installed.
+3. Open Jupyter with `jupyter lab` and start with lesson 01.1. From lesson 01.2, each lesson in
+   subjects 01 and 02 has an exercise notebook next to it and a solution in its `solutions/` folder.
+
 ## Setup
 
 ```bash
